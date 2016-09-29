@@ -3,23 +3,23 @@ angular
   .config(function ($stateProvider) {
     $stateProvider
       .state('home', {
-        url: '/home',
+        url: '/',
         templateUrl: 'views/home.html',
-        controller: 'AppController'
+        controller: 'GeneralController'
       })
       .state('home.notifications', {
-        url: '/notifications',
+        url: 'notifications',
         templateUrl: 'views/home/notifications.html',
-        controller: 'AppController'
+        controller: 'GeneralController'
       })
       .state('home.timeline', {
-        url: '/timeline',
+        url: 'timeline',
         templateUrl: 'views/home/timeline.html',
-        controller: 'AppController'
+        controller: 'GeneralController'
       })
       .state('home.user', {
-        url: '/user',
+        url: 'user',
         templateUrl: 'views/home/user.html',
-        controller: 'AppController'
+        controller: 'GeneralController'
       })
   })
